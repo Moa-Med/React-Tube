@@ -1,11 +1,7 @@
 # React-Tube
 
 A youtube
-sdasdasas
 
-asdsad
-asd
-asd
 as
 =======
 dsadsadaas
