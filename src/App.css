@@ -1,0 +1,153 @@
+.App{
+  width: 100%;
+  background-color:#f7f5f5;
+  color: #212121;
+  font-family: "Roboto",sans-serif;
+}
+
+.container{
+  width: 96%;
+  margin: 0 auto;
+}
+
+/* header of the app logo and search bar */
+header{
+  background-color: #fff;
+  padding: 2px 6px;
+  padding-bottom: 6px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 100px 500px;
+}
+.App-logo {
+  padding-top: 5px;
+  max-width: 120px;
+  height: auto;
+}
+.search-bar input {
+  width: calc(100% - 74px);
+  padding: 8px;
+  font-size: 14px;
+  outline: none;
+}
+.search-bar a{
+    width: 64px;
+    background-color: #f8f8f8;
+    color: #828282;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    line-height: 36px;
+}
+.search-bar a, .search-bar input {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 36px;
+  border: .5px solid #828282;
+}
+
+/* image and the items size and layout*/
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.channels{
+  border-radius: 50%;
+  max-width: 30%;
+}
+.thumbnail {
+  display: flex;
+}
+.item-image{
+  max-width: 100%;
+}
+.info p{
+  color: #828282;
+}
+
+@media only screen and (max-width: 660px){
+.header {
+    grid-template-columns: 1fr 1fr;
+ }
+ section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.search-bar input {
+  padding: 8px;
+  font-size: 14px;
+  outline: none;
+}
+}
+/* video css */
+.video{
+  background-color:black;
+  padding-left : 250px;
+  padding-right : 250px;
+  width: 65%;
+  overflow: hidden;
+}
+.videoThumbnails{
+  width : 70px;
+  margin : 12px;
+}
+.meta-data{
+  display: flex;
+  padding: 0 8px;
+  flex-direction: row;
+}
+
+.meta-data .left {
+  margin-right: 8px;
+}
+.meta-data p {
+  margin-bottom: 4px;
+    color: grey;
+}
+.button{
+    padding: 8px;
+    font-weight: 700;
+    background-color: #dc143c;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.viewDate{
+  display: flex;
+}
+
+.blackColor{
+  background-color: gray;
+}
+/* header dark */
+.header-dark{
+  background-color: #413f3f;
+  padding: 9px 9px;
+  padding-bottom: 0px;
+  display: flex;
+  grid-template-columns: 1fr 2fr;
+ 
+}
+
+/* allows a round of 3 secondes */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo-round {
+    animation: App-logo-spin infinite 3s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
